@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Validador de IBAN</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="iban"
+          placeholder="Ej: ES21 1465 0100 72 2030876293"
+          maxlength="29"
+        />
+        <button id="buttonIban">Validar IBAN</button>
+      </div>
+      <div id="result" class="result-container hidden">
+        <h2>Resultados</h2>
+        <div id="validation-result" class="validation-result"></div>
+        <div id="iban-details" class="iban-details">
+          <p><strong>Código País:</strong> <span id="country-code"></span></p>
+          <p>
+            <strong>Dígitos de Control:</strong>
+            <span id="control-digits"></span>
+          </p>
+          <p><strong>Banco:</strong> <span id="bank-name"></span></p>
+          <p><strong>Oficina:</strong> <span id="branch-code"></span></p>
+          <p>
+            <strong>Dígito de Control:</strong>
+            <span id="account-control"></span>
+          </p>
+          <p>
+            <strong>Número de Cuenta:</strong> <span id="account-number"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
