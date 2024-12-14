@@ -1,0 +1,18 @@
+
+h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  display: flex;
+  height: 300px;
+  width: 99%;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#url {
+  margin-bottom: 1rem;
+  height: 100%;
+}
